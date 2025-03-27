@@ -196,6 +196,7 @@ strong {
     }
 
     .card {
+        width: 100%;
         padding: 0;
     }
 
@@ -224,6 +225,7 @@ strong {
     }
 
     .text-block {
+        margin: 0 1em;
         padding: 0;
     }
 
