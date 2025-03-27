@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:image" content="https://raw.githubusercontent.com/ysagohh/newsletter-signup/refs/heads/main/assets/images/preview.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <script defer src="./app.js"></script>
+</head>
+<body>
+
+  <!-- Sign-up form start -->
+
+  <div class="card" id="form-container">
+    <img class="mobile-banner-img" src="./assets/images/illustration-sign-up-mobile.svg" aria-hidden="true" alt="illustration of app" />
+    <div class="wrapper">
+      <main class="text-block">
+        <h1>Stay updated!</h1>
+        <p class="description">Join 60,000+ product managers receiving monthly updates on:</p>
+        <div class="list-item">
+          <img class="list-bullet" src="./assets/images/icon-success.svg" aria-hidden="true" alt="check mark" />
+          <p>Product discovery and building what matters</p>
+        </div>
+        <div class="list-item">
+          <img class="list-bullet" src="./assets/images/icon-success.svg" aria-hidden="true" alt="check mark" />
+          <p >Measuring to ensure updates are a success</p>
+        </div>
+        <div class="list-item">
+          <img class="list-bullet" src="./assets/images/icon-success.svg" aria-hidden="true" alt="check mark" />
+          <p>And much more!</p>
+        </div>
+        <form id="subscribe-form" action="#" method="POST" novalidate>
+          <label for="email">Email address</label>
+          <div class="error-message" id="email-error" aria-live="polite"></div>
+          <input type="email" id="email" name="email" placeholder="email@company.com">
+          <input type="submit" id="btn-subscribe" value="Subscribe to monthly newsletter">
+        </form>
+      </main>
+      <img class="desktop-banner-img" src="./assets/images/illustration-sign-up-desktop.svg" aria-hidden="true" alt="illustration of app" />
+    </div>
+  </div>
+
+  <!-- Sign-up form end -->
+
+  <!-- Success message start -->
+
+  <div class="card hidden" id="success-container">
+    <div class="text-block" id="success-text-block">
+      <div id="success-grid-item">
+        <img class="success-img" src="./assets/images/icon-success.svg" aria-hidden="true" alt="check mark" />
+        <h1>Thanks for subscribing!</h1>
+        <p class="description">
+          A confirmation email has been sent to <strong>ash@loremcompany.com</strong>.
+          Please open it and click the button inside to confirm your subscription.
+        </p>
+      </div>
+      <button id="btn-dismiss">Dismiss message</button>
+    </div>
+  </div>
+
+  <!-- Success message end -->
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/ysagohh" target="_blank">Ysa Gohh</a>.
+  </footer>
+</body>
+</html>
